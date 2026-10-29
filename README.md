@@ -141,7 +141,7 @@ The objective of HireLens-AI is to demonstrate how large language models and str
 
 <div align="center">
 
-**Built to make recruitment insights clearer, smarter, and more structured.**
+**Transforming Job Descriptions into Intelligent Hiring Insights.**
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:A8C5A0,50:2F6B52,100:173F35&height=140&section=footer&text=Developed%20by%20Hania%20Eman&fontSize=25&fontColor=FFFFFF&animation=fadeIn" width="100%" alt="Animated developer credit footer" />
 

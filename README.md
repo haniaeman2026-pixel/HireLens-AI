@@ -1,72 +1,52 @@
  <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:173D2C,50:2E6548,100:8CB99A&height=200&section=header&text=HireLens-AI&fontSize=58&fontColor=FFFFFF&animation=fadeIn&fontAlignY=42&desc=AI%20Recruitment%20Intelligence&descSize=18&descAlignY=68&descColor=E8F3E9" width="100%" alt="HireLens-AI Animated Header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:173F35,50:2F6B52,100:A8C5A0&height=220&section=header&text=HireLens-AI&fontSize=58&fontColor=FFFFFF&fontAlignY=38&desc=AI-Powered%20Recruitment%20Intelligence&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="HireLens-AI animated header" />
 
-### Transform Job Descriptions into Hiring Intelligence
+### Intelligent Job Analysis • Skill Extraction • Hiring Insights
 
-An AI-powered recruitment intelligence system that analyzes job descriptions, identifies essential skills, classifies roles, and generates structured hiring insights.
-
-[Features](#-key-features) • [Workflow](#-how-it-works) • [Installation](#-installation) • [Usage](#-usage)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-AI%20Workflow-355E3B?style=for-the-badge)](https://www.langchain.com/langgraph)
+[![Groq](https://img.shields.io/badge/Groq-LLM%20Integration-F55036?style=for-the-badge)](https://groq.com/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 
 </div>
 
 ---
 
-## 🚀 Overview
+## 📌 Overview
 
-**HireLens-AI** is an AI-powered application designed to simplify job description analysis. It transforms unstructured job requirements into organized, actionable insights to help users understand role expectations, required skills, and hiring priorities.
+**HireLens-AI** is an AI-powered recruitment intelligence system that analyzes job descriptions and converts unstructured hiring requirements into clear, structured insights.
 
-The project combines AI-powered analysis with a clean, professional interface to make recruitment information easier to understand.
+Built with **Python, FastAPI, LangGraph, Groq, and React**, the system helps users understand job requirements, identify essential skills, classify roles, and generate organized hiring reports.
 
 ## ✨ Key Features
 
-- **Job Description Analysis** — Extracts important information from job postings.
-- **Skill Intelligence** — Identifies technical skills, soft skills, and key competencies.
-- **Role Classification** — Organizes job information into structured categories.
-- **Hiring Reports** — Generates summaries and actionable recruitment insights.
-- **AI Workflow** — Uses a structured LangGraph workflow for processing and analysis.
-- **Interactive UI** — Provides dedicated Job Analysis and Hiring Reports sections.
-- **JSON Export** — Supports exporting structured analysis results.
+- **Job Description Analysis** — Extracts important information from job descriptions.
+- **Skill Identification** — Highlights required technical and professional skills.
+- **Job Classification** — Organizes role-related information into structured categories.
+- **Hiring Reports** — Generates clear, actionable recruitment insights.
+- **AI Workflow** — Uses LangGraph to organize analysis into defined processing steps.
+- **Interactive Dashboard** — Provides a modern interface for job analysis and hiring reports.
 
-## ⚙️ Technology Stack
+## 🛠️ Technology Stack
 
 | Technology | Purpose |
 |---|---|
-| Python | Backend development |
-| FastAPI | API and application endpoints |
+| Python | Backend logic and processing |
+| FastAPI | REST API development |
 | LangGraph | AI workflow orchestration |
-| Groq API | AI-powered analysis |
-| React | Frontend interface |
-| Vite | Frontend development and build |
-| CSS | Responsive UI styling |
+| Groq API | Language model integration |
+| React | Interactive user interface |
+| Vite | Frontend development and build tooling |
 
 ## 🔄 How It Works
 
-<div align="center">
-
-**01 — User Input**
-
-Paste a job description.
-
-↓ 
-
-**02 — AI Processing**
-
-Process and analyze the provided text.
-
-↓
-
-**03 — Intelligence Extraction**
-
-Identify skills, requirements, and role information.
-
-↓
-
-**04 — Hiring Report**
-
-Present structured insights and recommendations.
-
-</div>
+1. **Input:** The user submits a job description.
+2. **Processing:** The backend processes the provided text.
+3. **AI Analysis:** The workflow extracts requirements, identifies skills, and organizes job-related information.
+4. **Report Generation:** Structured insights are returned to the frontend.
+5. **Output:** The user reviews the analysis and hiring report.
 
 ## 📂 Project Structure
 
@@ -80,59 +60,60 @@ HireLens-AI/
 ├── frontend-react/
 │   ├── src/
 │   ├── public/
-│   ├── package.json
-│   └── vite.config.js
+│   └── package.json
 ├── tests/
+├── .env
 ├── .gitignore
-├── requirements.txt
-└── README.md
+└── requirements.txt
 ```
 
-## 💻 Installation
+*Note: The structure above represents the main project components; additional frontend files may be present.*
 
-**1. Clone the repository**
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/HireLens-AI.git
+git clone https://github.com/haniaeman2026-pixel/HireLens-AI.git
 cd HireLens-AI
 ```
 
-**2. Create and activate a virtual environment**
+### 2. Set Up the Backend
 
 ```bash
 python -m venv .venv
 ```
 
-Windows PowerShell:
+Activate the environment on Windows:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-**3. Install backend dependencies**
+Install the dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**4. Configure environment variables**
+### 3. Configure Environment Variables
 
-Create a `.env` file in the project root and configure your Groq API key and supported model:
+Create a `.env` file in the project root:
 
 ```env
 GROQ_API_KEY=your_groq_api_key
 GROQ_MODEL=openai/gpt-oss-20b
 ```
 
-Keep your API key private. Never commit `.env` to GitHub.
+Replace the placeholder with your own API key. **Never upload your API key or `.env` file to GitHub.**
 
-**5. Start the backend**
+### 4. Run the Backend
 
 ```bash
-python -m uvicorn backend.app:app --reload
+python -m uvicorn backend.app:app --reload --host 127.0.0.1 --port 8000
 ```
 
-**6. Start the frontend**
+### 5. Run the React Frontend
 
 Open another terminal:
 
@@ -142,43 +123,26 @@ npm install
 npm run dev
 ```
 
-Open the local URL displayed by Vite in your browser.
-
-## 🧪 Testing
-
-Run the available backend tests from the project root:
-
-```bash
-python -m pytest -q
-```
-
-Check the backend health endpoint:
-
-```text
-http://127.0.0.1:8000/api/health
-```
+Open the local URL displayed in the terminal to access the application.
 
 ## 🎯 Project Objective
 
-The objective of HireLens-AI is to make job descriptions easier to interpret by converting unstructured recruitment information into clear, structured, and actionable hiring insights.
+The objective of HireLens-AI is to demonstrate how large language models and structured AI workflows can support recruitment by transforming job descriptions into useful, understandable hiring intelligence.
 
-## 🔮 Future Improvements
+## 🚀 Future Improvements
 
-- Candidate-to-job skill matching
-- Advanced recruitment analytics
-- Downloadable hiring reports
-- Enhanced job market insights
+- Resume-to-job matching
+- Candidate skill-gap analysis
+- Job market insights
+- Exportable recruitment reports
+- Role-based access and user authentication
 
 ---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:8CB99A,50:2E6548,100:173D2C&height=3&section=footer" width="100%" alt="Green divider" />
+**Built to make recruitment insights clearer, smarter, and more structured.**
 
-### Developed by Hania Eman
-
-**AI & Data Science | Python | AI Engineering**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:173D2C,50:2E6548,100:8CB99A&height=120&section=footer&text=Building%20Intelligent%20Solutions&fontSize=20&fontColor=FFFFFF&animation=fadeIn" width="100%" alt="Animated developer footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A8C5A0,50:2F6B52,100:173F35&height=140&section=footer&text=Developed%20by%20Hania%20Eman&fontSize=25&fontColor=FFFFFF&animation=fadeIn" width="100%" alt="Animated developer credit footer" />
 
 </div>
